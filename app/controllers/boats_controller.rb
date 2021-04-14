@@ -1,6 +1,6 @@
 class BoatsController < ApplicationController
   def index
-    @boat = "here is a boat"
+    @boats = Boat.all
     render 'index.html.erb'
   end
 end

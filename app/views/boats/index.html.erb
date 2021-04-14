@@ -1,4 +1,11 @@
 <h1>I am in index.html</h1>
 
 
-<p><%= @boat %></p>
+<% @boats.each do |boat| %>
+  <p><%= boat.title %></p>
+  <p><%= boat.capacity %></p>
+  <p><%= boat.color %></p>
+  <p><%= boat.year_christened %></p>
+  <p><%= boat.price %></p>
+  <hr>
+<% end %>
